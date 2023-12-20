@@ -478,8 +478,9 @@ function result(imageNum = 3) {
   document.querySelector('.options').style.display = 'none';
   document.querySelector('.info').style.display = 'none';
 
-  const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
-  const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
+  const header = '<div class="result head"><div class="left">順位</div><div class="right">キャラクター名</div></div>';
+  //const timeStr = `タイムスタンプ：${new Date(timestamp + timeTaken).toString()} <br> 順位を決めるには ${msToReadableTime(timeTaken)} かかりました <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
+  const timeStr = `順位を決めるには ${msToReadableTime(timeTaken)} かかりました <br> <a href="${location.protocol}//${sorterURL}">もう一回?</a>`;
   const imgRes = (char, num) => {
     const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
     const charTooltip = char.name !== charName ? char.name : '';
@@ -802,12 +803,12 @@ function msToReadableTime (milliseconds) {
   const minutes = Math.floor(t / 60);
   t = t - (minutes * 60);
   const content = [];
-	if (years) content.push(years + " year" + (years > 1 ? "s" : ""));
-	if (months) content.push(months + " month" + (months > 1 ? "s" : ""));
-	if (days) content.push(days + " day" + (days > 1 ? "s" : ""));
-	if (hours) content.push(hours + " hour"  + (hours > 1 ? "s" : ""));
-	if (minutes) content.push(minutes + " minute" + (minutes > 1 ? "s" : ""));
-	if (t) content.push(t + " second" + (t > 1 ? "s" : ""));
+	if (years) content.push(years + " 年" + (years > 1 ? "" : ""));
+	if (months) content.push(months + "月" + (months > 1 ? "" : ""));
+	if (days) content.push(days + "日" + (days > 1 ? "" : ""));
+	if (hours) content.push(hours + "時間"  + (hours > 1 ? "" : ""));
+	if (minutes) content.push(minutes + "分" + (minutes > 1 ? "" : ""));
+	if (t) content.push(t + "秒" + (t > 1 ? "" : ""));
   return content.slice(0,3).join(', ');
 }
 
