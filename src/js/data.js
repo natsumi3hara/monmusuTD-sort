@@ -20,4 +20,4 @@ let dataSetVersion = '';
 /**
  * Image root, will be appended to the start of every image URL.
  */
-const imageRoot = 'monmusuTD-sort/src/assets/chars/';
+const imageRoot = 'https://natsumi3hara.github.io/monmusuTD-sort/src/assets/chars/';
