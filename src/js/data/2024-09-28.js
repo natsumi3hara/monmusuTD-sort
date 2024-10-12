@@ -2401,6 +2401,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["light"],
       weapon:["hammer"],
+      alt:   true
     }
   },
   {
@@ -2411,6 +2412,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["earth"],
       weapon:["spear"],
+      alt:   true
     }
   },
   {
@@ -2461,6 +2463,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["dark"],
       weapon:["gun"],
+      alt:   true
     }
   },
   {
@@ -2471,6 +2474,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["light"],
       weapon:["scepter"],
+      alt:   true
     }
   },
   {
@@ -2481,6 +2485,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["water"],
       weapon:["dagger"],
+      alt:   true
     }
   },
   {
@@ -2491,6 +2496,7 @@ dataSet[dataSetVersion].characterData = [
       type:  ["ch"],
       attr:  ["water"],
       weapon:["staff"],
+      alt:   true
     }
   },
   {
